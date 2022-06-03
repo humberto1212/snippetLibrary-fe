@@ -1,9 +1,9 @@
-<form #snippetForm="ngForm" (ngSubmit)="addSnippet(snippetForm.value)">
-    <input ngModel type="text" name="title" placeholder="Add a Title" >
+<form (ngSubmit)="addSnippet()">
+    <input [(ngModel)]="title" type="text" name="title" placeholder="Add a Title" >
     <br><br>
-    <input ngModel type="text" name="description" placeholder="Add a description" >
+    <input [(ngModel)]="description" type="text" name="description" placeholder="Add a description" >
     <br><br>
-    <textarea ngModel type="text" name="codeSnipped" placeholder="Add a snippet" maxlength="500"></textarea>
+    <textarea [(ngModel)]="codeSnippet" type="text" name="codeSnippet" placeholder="Add a snippet" maxlength="500"></textarea>
     <br><br>
     <!-- <input ngModel type="text" name="topic" placeholder="Add a topic" >
     <br><br> -->
