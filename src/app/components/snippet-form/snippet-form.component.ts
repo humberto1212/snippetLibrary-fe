@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { Snippet } from '../../interfaces/Snippet';
 
 @Component({
@@ -8,8 +8,42 @@ import { Snippet } from '../../interfaces/Snippet';
 })
 export class SnippetFormComponent implements OnInit {
 
-  addSnippet(val: Snippet){
-    console.log(val)
+  @Output() onAddSnippet: EventEmitter<Snippet> = new EventEmitter();
+
+  title?: string;
+  description?: string;
+  codeSnippet?: string;
+
+  addSnippet(){
+
+    if(!this.title){
+      alert('please add a title');
+      return
+    }
+
+    if(!this.description){
+      alert('please add a description');
+      return
+    }
+
+    if(!this.codeSnippet){
+      alert('please add a codeSnipped');
+      return
+    }
+
+    const newSnippet = {
+      title: this.title,
+      description: this.description,
+      codeSnippet: this.codeSnippet,
+    }
+
+    this.onAddSnippet.emit(newSnippet);
+
+    this.title = ''
+    this.description = ''
+    this.codeSnippet = ''
+
+    console.log(newSnippet)
   } 
 
   constructor() { }
