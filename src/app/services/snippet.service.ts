@@ -16,7 +16,7 @@ const httpOptions = {
 })
 export class SnippetService {
 
-  private apiUrl = 'http://localhost:8080/api/task'
+  private apiUrl = 'http://localhost:8080/snippet'
 
   constructor(private http:HttpClient) { }
 
