@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { SnippetService } from './services/snippet.service';
+import { Snippet } from './interfaces/Snippet';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'snippetLibrary-fe';
+
+  snippets: Snippet[] = []
+  
+  constructor(private snippetService: SnippetService) { }
+
+  addSnippet(snippet: Snippet) {
+    this.snippetService.addSnippet(snippet).subscribe((snippet) => this.snippets.push(snippet));
+  }
+
 }
