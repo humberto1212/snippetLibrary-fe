@@ -1,6 +1,6 @@
 export interface Snippet {
     title?: string;
     description?: string;
-    codeSnipped?: string;
+    codeSnippet?: string;
     /* topic?: number; */
 }
