@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-topic',
@@ -6,9 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./topic.component.css']
 })
 export class TopicComponent implements OnInit {
+  topic?: string;
 
-  addTopic(val: string){
-    console.log("this is the topic val",val)
+  @Output() onAddTopic: EventEmitter<string> = new EventEmitter();
+
+  addTopic(){
+    if(!this.topic){
+      alert('please add a topic')
+    }
+
+    const newTopic = {
+      topic: this.topic
+    }
+
+    this.onAddTopic.emit(newTopic);
+    
 
   }
 
