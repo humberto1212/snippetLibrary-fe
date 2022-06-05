@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class TopicComponent implements OnInit {
 
   addTopic(val: string){
-    console.log(val)
+    console.log("this is the topic val",val)
+
   }
 
   constructor() { }
