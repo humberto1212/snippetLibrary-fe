@@ -5,6 +5,17 @@
       "description": "Urlaub",
       "codeSnippet": "new tre",
       "id": 1
+    },
+    {
+      "topic": "JS",
+      "id": 2
+    },
+    {
+      "topic": "Java",
+      "id": 3
     }
+  ],
+  "topic": [
+    {}
   ]
 }
