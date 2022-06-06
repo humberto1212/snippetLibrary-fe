@@ -1,5 +1,5 @@
-<form #topicForm="ngForm" (ngSubmit)="addTopic(topicForm.value)">
-    <input ngModel type="text" name="topic" placeholder="Add a new topic" >
+<form (ngSubmit)="addTopic()">
+    <input [(ngModel)]="topic" type="text" name="topic" placeholder="Add a new topic" >
     <br><br>
     <button>Add Topic</button>
 </form>
