@@ -1,3 +1,4 @@
+import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { Snippet } from '../../interfaces/Snippet';
 
@@ -13,6 +14,7 @@ export class SnippetFormComponent implements OnInit {
   title?: string;
   description?: string;
   codeSnippet?: string;
+  topic?: string;
 
   addSnippet(){
 
@@ -35,6 +37,7 @@ export class SnippetFormComponent implements OnInit {
       title: this.title,
       description: this.description,
       codeSnippet: this.codeSnippet,
+      topic: this.topic
     }
 
     this.onAddSnippet.emit(newSnippet);
@@ -42,6 +45,7 @@ export class SnippetFormComponent implements OnInit {
     this.title = ''
     this.description = ''
     this.codeSnippet = ''
+    this.topic = ''
 
     console.log(newSnippet)
   } 
