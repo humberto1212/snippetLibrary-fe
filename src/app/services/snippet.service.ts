@@ -4,6 +4,7 @@ import {Observable} from 'rxjs'
 
 //Import Interfaces
 import { Snippet } from '../interfaces/Snippet';
+import { Topic } from '../interfaces/Topic';
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -20,11 +21,11 @@ export class SnippetService {
 
   constructor(private http:HttpClient) { }
 
-  addTopic(topic: string): Observable<string>{
-    return this.http.post<string>(this.apiUrl, topic, httpOptions);
+  addTopicSe(topic: Topic): Observable<Topic>{
+    return this.http.post<Topic>(this.apiUrl, topic, httpOptions);
 }
 
-  addSnippet(snippet: Snippet): Observable<Snippet>{
+  addSnippetSe(snippet: Snippet): Observable<Snippet>{
     return this.http.post<Snippet>(this.apiUrl, snippet, httpOptions);
 }
 
