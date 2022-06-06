@@ -1,4 +1,5 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Topic } from 'src/app/interfaces/Topic';
 
 @Component({
   selector: 'app-topic',
@@ -8,7 +9,7 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 export class TopicComponent implements OnInit {
   topic?: string;
 
-  @Output() onAddTopic: EventEmitter<string> = new EventEmitter();
+  @Output() onAddTopic: EventEmitter<Topic> = new EventEmitter();
 
   addTopic(){
     if(!this.topic){
@@ -20,8 +21,9 @@ export class TopicComponent implements OnInit {
     }
 
     this.onAddTopic.emit(newTopic);
-    
 
+    this.topic = '';
+    
   }
 
   constructor() { }
