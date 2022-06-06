@@ -7,15 +7,31 @@
       "id": 1
     },
     {
-      "topic": "JS",
+      "title": "Go code snippet",
+      "description": "This is a test",
+      "codeSnippet": "GO(){\n}",
       "id": 2
     },
     {
-      "topic": "Java",
+      "title": "test topic",
+      "description": "add topic select",
+      "codeSnippet": "topic{}",
+      "topic": "JS",
       "id": 3
     }
   ],
   "topic": [
-    {}
+    {
+      "topic": "Go",
+      "id": 1
+    },
+    {
+      "topic": "Java",
+      "id": 2
+    },
+    {
+      "topic": "JS",
+      "id": 3
+    }
   ]
 }
