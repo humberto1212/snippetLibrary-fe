@@ -1,6 +1,12 @@
-import { ThisReceiver } from '@angular/compiler';
+//import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { Snippet } from '../../interfaces/Snippet';
+
+//Import services
+import { TopicService } from 'src/app/services/topic/topic.service';
+
+//Import Interfaces
+import { Topic } from 'src/app/interfaces/Topic';
 
 @Component({
   selector: 'app-snippet-form',
@@ -9,7 +15,13 @@ import { Snippet } from '../../interfaces/Snippet';
 })
 export class SnippetFormComponent implements OnInit {
 
+  topics: Topic[] = []
+
   @Output() onAddSnippet: EventEmitter<Snippet> = new EventEmitter();
+
+  constructor( private topicService: TopicService ) { }
+
+  ngOnInit(): void { this.topicService.getTopicSe().subscribe((topics) => this.topics = topics)}
 
   title?: string;
   description?: string;
@@ -49,10 +61,5 @@ export class SnippetFormComponent implements OnInit {
 
     console.log(newSnippet)
   } 
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }
