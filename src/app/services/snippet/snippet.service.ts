@@ -3,7 +3,7 @@ import {HttpClient, HttpHeaders} from '@angular/common/http'
 import {Observable} from 'rxjs'
 
 //Import Interfaces
-import { Snippet } from '../interfaces/Snippet';
+import { Snippet } from '../../interfaces/Snippet';
 
 const httpOptions = {
   headers: new HttpHeaders({

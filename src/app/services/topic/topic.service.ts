@@ -20,6 +20,11 @@ export class TopicService {
   constructor(private http:HttpClient) { }
 
   addTopicSe(topic: Topic): Observable<Topic>{
-    return this.http.post<Topic>(this.apiUrl, topic, httpOptions)
+    return this.http.post<Topic>(this.apiUrl, topic, httpOptions);
   }
+
+  getTopicSe(): Observable<Topic[]>{
+    return this.http.get<Topic[]>(this.apiUrl);
+  }
+
 }

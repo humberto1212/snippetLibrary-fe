@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SnippetService } from './services/snippet.service';
+import { SnippetService } from './services/snippet/snippet.service';
 import { Snippet } from './interfaces/Snippet';
 import { Topic } from './interfaces/Topic';
 import { TopicService } from './services/topic/topic.service';
