@@ -4,7 +4,6 @@ import { Snippet } from '../../interfaces/Snippet';
 
 //Import services
 import { TopicService } from 'src/app/services/topic/topic.service';
-
 //Import Interfaces
 import { Topic } from 'src/app/interfaces/Topic';
 
@@ -21,7 +20,11 @@ export class SnippetFormComponent implements OnInit {
 
   constructor( private topicService: TopicService ) { }
 
-  ngOnInit(): void { this.topicService.getTopicSe().subscribe((topics) => this.topics = topics)}
+  ngOnInit(): void {
+    this.topicService.getTopicSe().subscribe((topics) => {
+      this.topics = topics 
+    })  
+  }
 
   title?: string;
   description?: string;
