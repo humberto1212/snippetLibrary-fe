@@ -6,13 +6,11 @@
     <textarea [(ngModel)]="codeSnippet" type="text" name="codeSnippet" placeholder="Add a snippet" maxlength="500"></textarea>
     <br><br>
     <label for="topic">Choose a topic:</label>
-        <select [(ngModel)]="topic" id="topic" name="topic" size="3">
-        <option  value="JS">JS</option>
-        <option value="Java">Java</option>
-        <option value="Go">Go</option>
-        <option value="SQL">SQL</option>
+    <select [(ngModel)]="topic" id="topic" name="topic" size="3">
+        <option *ngFor="let topic of topics" [value]="topic.id">{{topic.topic}}</option>
     </select>
     <br><br>
 
     <button>Add New Snippet</button>
 </form>
+
