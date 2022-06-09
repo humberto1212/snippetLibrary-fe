@@ -15,7 +15,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class TopicService {
-  private apiUrl = 'http://localhost:8080/topic'
+  private apiUrl = 'http://localhost:8080/api/topic'
 
   constructor(private http:HttpClient) { }
 
