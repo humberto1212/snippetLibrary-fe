@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+body { margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    text-align: left;
+    font-weight: 400;
+     background-color: #525f7f;
+ /*  background-color: #1e1e2f; */
+
+}
