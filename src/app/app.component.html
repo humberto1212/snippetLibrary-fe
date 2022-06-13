@@ -1,2 +1,14 @@
-<app-topic (onAddTopic)="addTopicPa($event)" ></app-topic>
-<app-snippet-form (onAddSnippet)="addSnippetPa($event)"></app-snippet-form>
+<!-- <app-topic (onAddTopic)="addTopicPa($event)" ></app-topic>
+<app-snippet-form (onAddSnippet)="addSnippetPa($event)"></app-snippet-form>  -->
+
+<mat-sidenav-container style="height: 100%;" >
+    <mat-sidenav class="sidenav" #sideNav mode="side" opened>
+        
+        <app-side-nav></app-side-nav>
+
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <app-contentboard></app-contentboard>
+    </mat-sidenav-content>
+</mat-sidenav-container>
