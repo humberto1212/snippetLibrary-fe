@@ -4,6 +4,7 @@ import { Snippet } from './interfaces/Snippet';
 import { Topic } from './interfaces/Topic';
 import { TopicService } from './services/topic/topic.service';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -16,7 +17,7 @@ export class AppComponent {
   
   constructor(
     private snippetService: SnippetService,
-    private topicService: TopicService
+    private topicService: TopicService,
     ) { }
 
   addTopicPa(topic: Topic) {
@@ -26,5 +27,6 @@ export class AppComponent {
   addSnippetPa(snippet: Snippet) {
     this.snippetService.addSnippetSe(snippet).subscribe((snippet) => this.snippets.push(snippet));
   }
+ 
 
 }

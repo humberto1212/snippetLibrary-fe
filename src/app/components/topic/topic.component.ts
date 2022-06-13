@@ -1,5 +1,6 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { Topic } from 'src/app/interfaces/Topic';
+import { MatDialogRef} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-topic',
@@ -26,9 +27,13 @@ export class TopicComponent implements OnInit {
     
   }
 
-  constructor() { }
+  constructor( private dialogRef: MatDialogRef<TopicComponent>) { }
 
   ngOnInit(): void {
+  }
+
+  onNoClick(): void {
+    this.dialogRef.close();
   }
 
 }
