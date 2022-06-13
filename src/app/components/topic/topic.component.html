@@ -1,5 +1,12 @@
-<form (ngSubmit)="addTopic()">
-    <input [(ngModel)]="topic" type="text" name="topic" placeholder="Add a new topic" >
-    <br><br>
-    <button>Add Topic</button>
-</form>
+<div mat-dialog-content class="form-topic">
+    <form  (ngSubmit)="addTopic()">
+        <input [(ngModel)]="topic" type="text" name="topic" placeholder="Add a new topic" >
+        <br><br>
+        <button mat-button>Add Topic</button>
+    </form>
+
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">No Thanks</button>
+</div>
+
