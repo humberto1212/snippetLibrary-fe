@@ -1,12 +1,22 @@
-<div mat-dialog-content class="form-topic">
-    <form  (ngSubmit)="addTopic()">
+<h1 mat-dialog-title>Add a new topic</h1>
+<div mat-dialog-content> 
+  <!--   <form  (ngSubmit)="addTopic()">
         <input [(ngModel)]="topic" type="text" name="topic" placeholder="Add a new topic" >
         <br><br>
         <button mat-button>Add Topic</button>
     </form>
+ -->
+    <form [formGroup]="productForm" >
+        <mat-form-field  appearance="outline">
+            <mat-label>Topic Name</mat-label>
+            <input formControlName="topic" matInput placeholder="Topic Name">
+            
+        </mat-form-field>
+    </form>
 
 </div>
 <div mat-dialog-actions>
-    <button mat-button (click)="onNoClick()">No Thanks</button>
+    <button mat-stroked-button (click)="onNoClick()" color="accent">Cancel</button>
+    <button mat-stroked-button (click)="addTopic()" >Add Topic</button>
 </div>
 
