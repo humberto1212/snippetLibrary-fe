@@ -14,6 +14,11 @@ import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { ContentboardComponent } from './components/contentboard/contentboard.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +36,11 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatSidenavModule,
     BrowserAnimationsModule,
     MatIconModule,
-    MatDialogModule
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
