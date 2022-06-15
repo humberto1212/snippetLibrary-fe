@@ -1,3 +1,21 @@
-<div style="height: 100%;">
-    <p>Content board to show Snippets</p>
+<div class="content-board-style">
+    <div class="options-style">
+        <app-options></app-options>
+    </div>
+
+    <div  class="board-style" >
+
+        <div for="snippet" class="board-content-style">
+            <div *ngFor="let snippet of snippets" class="snippet-box">
+                <p>{{snippet.title}}</p>
+                <p>{{snippet.description}}</p>
+                <p>{{snippet.codeSnippet}}</p>
+                <p>{{snippet.topic}}</p>
+            </div>
+       
+            
+        </div>
+        
+    </div>
+
 </div>
