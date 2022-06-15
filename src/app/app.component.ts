@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { SnippetService } from './services/snippet/snippet.service';
+/* import { SnippetService } from './services/snippet/snippet.service';
 import { Snippet } from './interfaces/Snippet';
-import { Topic } from './interfaces/Topic';
-import { TopicService } from './services/topic/topic.service';
+import { Topic } from './interfaces/Topic'; */
+//import { TopicService } from './services/topic/topic.service';
 
 
 @Component({
@@ -12,21 +12,21 @@ import { TopicService } from './services/topic/topic.service';
 })
 export class AppComponent {
 
-  snippets: Snippet[] = []
-  topic: Topic[] = []
+/*   snippets: Snippet[] = []
+  topic: Topic[] = [] */
   
   constructor(
-    private snippetService: SnippetService,
-    private topicService: TopicService,
+    //private snippetService: SnippetService,
+    //private topicService: TopicService,
     ) { }
 
-  addTopicPa(topic: Topic) {
+ /*  addTopicPa(topic: Topic) {
     this.topicService.addTopicSe(topic).subscribe((topic) => this.topic.push(topic));
-  }
-
+  } */
+/* 
   addSnippetPa(snippet: Snippet) {
     this.snippetService.addSnippetSe(snippet).subscribe((snippet) => this.snippets.push(snippet));
-  }
+  } */
  
 
 }
