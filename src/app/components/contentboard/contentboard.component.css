@@ -1,0 +1,49 @@
+.content-board-style{
+    background-color: #525f7f;
+    height: 100%;
+}
+
+.options-style{
+    border: solid;
+    border-color: black;
+    height: 20%;
+}
+
+.board-style{
+/*     border: solid;
+    border-color: blue; */
+    height: 79%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.board-content-style{
+   /*  border: solid;
+    border-color: red; */
+    display: flex; 
+    justify-content: space-around;
+    flex-flow: row wrap;
+    height: 90%;
+    width: 90%;
+    overflow: scroll;
+
+}
+.board-content-style::-webkit-scrollbar {
+    display: none; 
+}
+
+.snippet-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: solid;
+    border-radius: 10px;
+    border-color: white;
+    margin: 10px;
+    width: 35%;
+    height: 35%;
+
+}
