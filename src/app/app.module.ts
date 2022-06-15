@@ -5,19 +5,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { TopicComponent } from './components/topic/topic.component';
-import { SnippetFormComponent } from './components/snippet-form/snippet-form.component';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
+import {TopicComponent} from './components/topic/topic.component';
+import {SnippetFormComponent} from './components/snippet-form/snippet-form.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
-import { SideNavComponent } from './components/side-nav/side-nav.component';
-import { ContentboardComponent } from './components/contentboard/contentboard.component';
+import {SideNavComponent} from './components/side-nav/side-nav.component';
+import {ContentboardComponent } from './components/contentboard/contentboard.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import { ReactiveFormsModule } from '@angular/forms';
+import {MatSelectModule} from '@angular/material/select';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
