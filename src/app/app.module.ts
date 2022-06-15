@@ -19,6 +19,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatSelectModule} from '@angular/material/select';
+import { OptionsComponent } from './components/options/options.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import {MatSelectModule} from '@angular/material/select';
     TopicComponent,
     SnippetFormComponent,
     SideNavComponent,
-    ContentboardComponent
+    ContentboardComponent,
+    OptionsComponent
   ],
   imports: [
     BrowserModule,
