@@ -32,6 +32,13 @@
       "codeSnippet": "{}...",
       "topic": "2",
       "id": 5
+    },
+    {
+      "title": "CSS Glass style",
+      "description": "This is a glass style with css",
+      "codeSnippet": ".glass-style{\n  back..\ncolor..\n}",
+      "topic": 5,
+      "id": 6
     }
   ],
   "topic": [
@@ -54,6 +61,10 @@
     {
       "topic": "CSS",
       "id": 5
+    },
+    {
+      "topic": "Angular",
+      "id": 6
     }
   ]
 }
