@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import {MatDialog} from '@angular/material/dialog';
 import {TopicComponent} from '../topic/topic.component'
+import { SnippetFormComponent } from '../snippet-form/snippet-form.component';
 
 @Component({
   selector: 'app-side-nav',
@@ -16,10 +17,16 @@ export class SideNavComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  //TOPIC FORM
   openDialogTopic(): void {
    this.dialog.open(TopicComponent, {
-  
     });
   }
+
+  //SNIPPET FORM
+  openDialogSnippet(): void {
+    this.dialog.open(SnippetFormComponent, {
+     });
+   }
 
 }
