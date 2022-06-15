@@ -1,6 +1,6 @@
 //import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
-import { Snippet } from '../../interfaces/Snippet';
+//import { Snippet } from '../../interfaces/Snippet';
 import { MatDialogRef} from '@angular/material/dialog';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { SnippetService } from 'src/app/services/snippet/snippet.service';
@@ -42,6 +42,7 @@ export class SnippetFormComponent implements OnInit {
     this.topicService.getTopicSe().subscribe((topics) => {
       this.topics = topics 
     })  
+
   }
 
 /*   title?: string;

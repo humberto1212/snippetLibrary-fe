@@ -23,6 +23,10 @@ export class SnippetService {
 
   addSnippetSe(snippet: Snippet): Observable<Snippet>{
     return this.http.post<Snippet>(this.apiUrl, snippet, httpOptions);
-}
+  }
+
+  getSnippetSe(): Observable<Snippet[]>{
+    return this.http.get<Snippet[]>(this.apiUrl)
+  }
 
 }
