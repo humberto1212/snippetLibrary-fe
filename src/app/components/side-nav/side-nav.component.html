@@ -1,9 +1,19 @@
 <div class="modal-list">
     <ul class="ul">
-        <li>
-            <Button mat-raised-button (click)="openDialogTopic()" class="button">Add New Tag</Button>
-            <Button mat-raised-button (click)="openDialogSnippet()" class="button">Add Snippets</Button>
-            <Button class="button">Add Error Snippets</Button>
+        <li class="li-nav">
+            <Button mat-raised-button (click)="openDialogTopic()" class="button">
+                <!-- <mat-icon svgIcon="thumbs-up" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon> -->
+                <mat-icon>loyalty</mat-icon>
+                &nbsp;&nbsp;&nbsp;ADD TAG
+            </Button>
+            <Button mat-raised-button (click)="openDialogSnippet()" class="button">
+                <mat-icon>code</mat-icon>
+                &nbsp;&nbsp;&nbsp;ADD SNIPPET
+            </Button>
+            <Button class="button">
+                <mat-icon>bug_report</mat-icon>
+                &nbsp;&nbsp;&nbsp;ADD ERROR
+            </Button>
         </li>
     </ul>
 
