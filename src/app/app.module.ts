@@ -22,6 +22,7 @@ import {MatSelectModule} from '@angular/material/select';
 import { OptionsComponent } from './components/options/options.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +30,8 @@ import { OptionsComponent } from './components/options/options.component';
     SnippetFormComponent,
     SideNavComponent,
     ContentboardComponent,
-    OptionsComponent
+    OptionsComponent,
+
   ],
   imports: [
     BrowserModule,
