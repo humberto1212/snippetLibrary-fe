@@ -1,25 +1,6 @@
 {
   "snippet": [
     {
-      "title": "new title",
-      "description": "Urlaub",
-      "codeSnippet": "new tre",
-      "id": 1
-    },
-    {
-      "title": "Go code snippet",
-      "description": "This is a test",
-      "codeSnippet": "GO(){\n}",
-      "id": 2
-    },
-    {
-      "title": "test topic",
-      "description": "add topic select",
-      "codeSnippet": "topic{}",
-      "topic": "JS",
-      "id": 3
-    },
-    {
       "title": "Dropdown",
       "description": "testing  Dropdown",
       "codeSnippet": "{}",
@@ -39,6 +20,13 @@
       "codeSnippet": ".glass-style{\n  back..\ncolor..\n}",
       "topic": 5,
       "id": 6
+    },
+    {
+      "title": "SQL",
+      "description": "new des",
+      "codeSnippet": "{\ndnwdwdnwkdn\ndwkndwkndknwd\nwjhdjwhd\n\ndkjwhdwhddkjh\njwdwjdhwjhd\n\ndkwhdkwhd\nkdwkdhwkd\n}",
+      "topic": 4,
+      "id": 7
     }
   ],
   "topic": [
