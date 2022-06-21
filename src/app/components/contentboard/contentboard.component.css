@@ -24,6 +24,7 @@
     border-color: red; */
     display: flex; 
     justify-content: space-around;
+    align-items: center;
     flex-flow: row wrap;
     height: 90%;
     width: 90%;
@@ -34,16 +35,46 @@
     display: none; 
 }
 
+.board-content-code-style{
+    border-radius: 5px;
+    height: 90%;
+    width: 100%;
+    overflow: scroll;
+    background-color: #1e1e2f;
+    color: white;
+}
+
+.board-content-code-style::-webkit-scrollbar{
+    display: none; 
+}
+
 .snippet-box{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    justify-content:space-between;
+    align-items:flex-start;
     border: solid;
     border-radius: 10px;
     border-color: white;
     margin: 10px;
     width: 35%;
     height: 35%;
+}
 
+.row-styles{
+    font-weight: 700;
+    color: white;
+}
+
+.snippet-p{
+   margin-left: 5%;
+   color: white;
+
+}
+
+.topic-style{
+    border-radius: 5px;
+    background: #fd5d93;
+    padding: 2px;
+ 
 }

@@ -21,6 +21,7 @@ export class SnippetFormComponent implements OnInit {
   snippetForm !: FormGroup;
   topics: Topic[] = [];
 
+
   //@Output() onAddSnippet: EventEmitter<Snippet> = new EventEmitter();
 
   constructor( 
@@ -42,6 +43,8 @@ export class SnippetFormComponent implements OnInit {
     this.topicService.getTopicSe().subscribe((topics) => {
       this.topics = topics 
     })  
+
+  
 
   }
 
