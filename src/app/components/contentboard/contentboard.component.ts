@@ -22,7 +22,7 @@ export class ContentboardComponent implements OnInit {
   constructor(
     private snippetService: SnippetService,
     private topicService: TopicService,
-    private dialog : MatDialog
+
   ) { }
 
   ngOnInit(): void {
@@ -34,6 +34,10 @@ export class ContentboardComponent implements OnInit {
       this.topics = topic
     });
     
+  }
+
+  deleteSnippet(snippet: Snippet){
+    this.snippetService.deleteSnippedSe(snippet).subscribe(() => (this.snippets = this.snippets.filter(s => s.id !== snippet.id)))
   }
 
 
