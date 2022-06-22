@@ -29,4 +29,9 @@ export class SnippetService {
     return this.http.get<Snippet[]>(this.apiUrl)
   }
 
+  deleteSnippedSe(snippet: Snippet): Observable<Snippet>{
+    const url = `${this.apiUrl}/${snippet.id}`;
+    return this.http.delete<Snippet>(url)
+  }
+
 }
