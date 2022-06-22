@@ -2,6 +2,8 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 //import { Topic } from 'src/app/interfaces/Topic';
 import { MatDialogRef} from '@angular/material/dialog';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+
+//Import services
 import { TopicService } from 'src/app/services/topic/topic.service';
 
 @Component({
@@ -10,11 +12,8 @@ import { TopicService } from 'src/app/services/topic/topic.service';
   styleUrls: ['./topic.component.css']
 })
 export class TopicComponent implements OnInit {
-  //topic?: string;
+
   topicForm !: FormGroup;
-
-  //@Output() onAddTopic: EventEmitter<Topic> = new EventEmitter();
-
   
   constructor( 
     private topicService: TopicService,
@@ -37,18 +36,6 @@ export class TopicComponent implements OnInit {
     }
 
     this.dialogRef.close();
-
-  /*   if(!this.topic){
-      alert('please add a topic')
-    }
-
-    const newTopic = {
-      topic: this.topic
-    }
-
-    this.onAddTopic.emit(newTopic);
-
-    this.topic = ''; */
   }
 
   //Close Modal
