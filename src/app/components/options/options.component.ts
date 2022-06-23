@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Snippet } from 'src/app/interfaces/Snippet';
 
 @Component({
   selector: 'app-options',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./options.component.css']
 })
 export class OptionsComponent implements OnInit {
+
+  @Input() snippets?: Snippet[];
 
   constructor() { }
 
