@@ -5,12 +5,7 @@
         <div class="form-group">
             <label for="searchText">Search Text</label>
             <input type="text" [(ngModel)]="searchText" name="search">
-          </div>
-
-          <div class="form-group">
-            <label for="searchTexOther">Search Text</label>
-            <input type="text" [(ngModel)]="searchTexOther" name="search">
-          </div>
+        </div>
 
     </div>
 
@@ -18,7 +13,7 @@
 
         <div for="snippet" class="board-content-style">
             
-            <div *ngFor="let snippet of snippets | filter: searchText | filter: searchTexOther"
+            <div *ngFor="let snippet of snippets | filter: searchText"
              class="snippet-box">
  
                <div class="delete-button-div">
