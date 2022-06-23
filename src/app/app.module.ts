@@ -20,6 +20,8 @@ import {MatButtonModule} from '@angular/material/button';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatSelectModule} from '@angular/material/select';
 import { OptionsComponent } from './components/options/options.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+
 
 
 
@@ -30,8 +32,7 @@ import { OptionsComponent } from './components/options/options.component';
     SnippetFormComponent,
     SideNavComponent,
     ContentboardComponent,
-    OptionsComponent,
-
+    OptionsComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +47,8 @@ import { OptionsComponent } from './components/options/options.component';
     MatInputModule,
     MatButtonModule,
     ReactiveFormsModule,
-    MatSelectModule
+    MatSelectModule,
+    Ng2SearchPipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
