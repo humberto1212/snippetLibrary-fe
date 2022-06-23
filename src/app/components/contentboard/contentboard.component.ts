@@ -3,19 +3,24 @@ import { MatDialog } from '@angular/material/dialog';
 import { Snippet } from 'src/app/interfaces/Snippet';
 import { Topic } from 'src/app/interfaces/Topic';
 
+
 //Import services
 import { SnippetService } from 'src/app/services/snippet/snippet.service';
 import { TopicService } from 'src/app/services/topic/topic.service';
 
+
 @Component({
   selector: 'app-contentboard',
   templateUrl: './contentboard.component.html',
-  styleUrls: ['./contentboard.component.css']
+  styleUrls: ['./contentboard.component.css'],
 })
 export class ContentboardComponent implements OnInit {
 
   snippets: Snippet[] = [];
   topics: Topic[] = [];
+
+  //Search Var
+  searchText = '';
 
 
 
