@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
 import {TopicComponent} from '../topic/topic.component'
 import { SnippetFormComponent } from '../snippet-form/snippet-form.component';
+import { ErrorSnippetComponent } from '../error-snippet/error-snippet.component'
 
 @Component({
   selector: 'app-side-nav',
@@ -26,6 +27,12 @@ export class SideNavComponent implements OnInit {
   //SNIPPET FORM
   openDialogSnippet(): void {
     this.dialog.open(SnippetFormComponent, {
+     });
+   }
+
+    //SNIPPET FORM
+  openDialogErrorSnippet(): void {
+    this.dialog.open(ErrorSnippetComponent, {
      });
    }
 

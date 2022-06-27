@@ -1,5 +1,5 @@
 //import { ThisReceiver } from '@angular/compiler';
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 //import { Snippet } from '../../interfaces/Snippet';
 import { MatDialogRef} from '@angular/material/dialog';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
@@ -21,8 +21,6 @@ export class SnippetFormComponent implements OnInit {
   snippetForm !: FormGroup;
   topics: Topic[] = [];
 
-
-  //@Output() onAddSnippet: EventEmitter<Snippet> = new EventEmitter();
 
   constructor( 
     private snippetService: SnippetService,
@@ -62,37 +60,6 @@ export class SnippetFormComponent implements OnInit {
 
 
     this.dialogRef.close();
-
-    /* if(!this.title){
-      alert('please add a title');
-      return
-    }
-
-    if(!this.description){
-      alert('please add a description');
-      return
-    }
-
-    if(!this.codeSnippet){
-      alert('please add a codeSnipped');
-      return
-    }
-
-    const newSnippet = {
-      title: this.title,
-      description: this.description,
-      codeSnippet: this.codeSnippet,
-      topic: this.topic
-    }
-
-    this.onAddSnippet.emit(newSnippet);
-
-    this.title = ''
-    this.description = ''
-    this.codeSnippet = ''
-    this.topic = ''
-
-    console.log(newSnippet) */
   } 
 
    //Close Modal

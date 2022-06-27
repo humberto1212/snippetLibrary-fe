@@ -5,7 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
-import {AppRoutingModule} from './app-routing.module';
+import {AppRoutingModule, routingComponents} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {TopicComponent} from './components/topic/topic.component';
 import {SnippetFormComponent} from './components/snippet-form/snippet-form.component';
@@ -21,6 +21,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {MatSelectModule} from '@angular/material/select';
 import { OptionsComponent } from './components/options/options.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { ErrorSnippetComponent } from './components/error-snippet/error-snippet.component';
+import { ErrorContentboardComponent } from './components/error-contentboard/error-contentboard.component';
 
 
 
@@ -32,7 +34,10 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     SnippetFormComponent,
     SideNavComponent,
     ContentboardComponent,
-    OptionsComponent
+    OptionsComponent,
+    ErrorSnippetComponent,
+    ErrorContentboardComponent,
+    routingComponents
   ],
   imports: [
     BrowserModule,

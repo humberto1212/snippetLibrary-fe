@@ -1,20 +1,20 @@
 <h1 mat-dialog-title>Add a new Snippet</h1>
 <div mat-dialog-content> 
 
-    <form [formGroup]="snippetForm" class="snippet-form-style">
+    <form [formGroup]="errorSnippetForm" class="snippet-form-style">
         <mat-form-field  appearance="outline">
-            <mat-label>Snippet Title</mat-label>
+            <mat-label>Error Title</mat-label>
             <input formControlName="title" matInput placeholder="Snippet title">
         </mat-form-field>
   
  
         <mat-form-field  appearance="outline">
-            <mat-label>Snippet Descripiton</mat-label>
+            <mat-label>Error Descripiton</mat-label>
             <input formControlName="description" matInput placeholder="Snippet description">
         </mat-form-field>
 
         <mat-form-field appearance="outline">
-            <mat-label>Code Snippet</mat-label>
+            <mat-label>Solution</mat-label>
             <textarea formControlName="codeSnippet" matInput></textarea>
         </mat-form-field>
 
@@ -30,5 +30,5 @@
 </div>
 <div mat-dialog-actions>
     <button mat-stroked-button (click)="onNoClick()" color="accent">Cancel</button>
-    <button mat-stroked-button (click)="addSnippet()" >Add Topic</button>
+    <button mat-stroked-button (click)="addErrorSnippet()" >Add Error</button>
 </div>

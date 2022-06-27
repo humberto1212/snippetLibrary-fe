@@ -2,27 +2,32 @@
     <div class="options-style">
         <!-- <app-options [snippets]="snippets"></app-options> -->
 
-        <div class="form-group">
-            <label for="searchText">Search Text</label>
-            <input type="text" [(ngModel)]="searchText" name="search">
-        </div>
+    <div  class="search-style">
+     
+            <input type="text" [(ngModel)]="searchText" name="search" matInput placeholder="Seach for a Snippet by title, description or code">
 
+    </div>
+    
     </div>
 
     <div  class="board-style" >
 
-        <div for="snippet" class="board-content-style">
+        <div  for="snippet" class="board-content-style">
+
+           
             
-            <div *ngFor="let snippet of snippets | filter: searchText"
+            <div   *ngFor="let snippet of snippets | filter: searchText "
              class="snippet-box">
- 
+
                <div class="delete-button-div">
                     <mat-icon class="delete-button" (click)="deleteSnippet(snippet)">close</mat-icon>
                </div> 
                 
-                <div class="snippet-p" *ngFor="let topic of topics">
+               
+                <div class="snippet-p" *ngFor="let topic of topics"> 
                     <p class="topic-style" *ngIf="topic.id == snippet.topic">{{topic.topic}}</p>
-                </div> 
+                 </div>  
+         
 
                 <p class="snippet-p">{{snippet.title}}</p>
                 
@@ -36,6 +41,7 @@
             
                
             </div> 
+
         </div>        
     </div>
     

@@ -6,7 +6,7 @@
 .options-style{
     border: solid;
     border-color: black;
-    height: 20%;
+    height: 15%;
 }
 
 .board-style{
@@ -92,3 +92,20 @@
 .delete-button{
     color: #fd5d93;
 }
+
+input[type=text] {
+    width: 100%;
+    padding: 30px 30px;
+    box-sizing: border-box;
+    background-color: #1e1e2f;
+    border-bottom: 4px solid;
+    border-top: 4px solid;
+    border-color: black;
+    font-size: 18px;
+    color: aliceblue;
+  }
+
+  ::placeholder {
+    color: rgba(255, 255, 255, 0.363);
+    opacity: 1; /* Firefox */
+  }

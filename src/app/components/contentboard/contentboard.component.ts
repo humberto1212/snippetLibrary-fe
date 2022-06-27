@@ -21,6 +21,7 @@ export class ContentboardComponent implements OnInit {
 
   //Search Var
   searchText = '';
+  //searchTopic = '';
 
 
 
@@ -44,6 +45,5 @@ export class ContentboardComponent implements OnInit {
   deleteSnippet(snippet: Snippet){
     this.snippetService.deleteSnippedSe(snippet).subscribe(() => (this.snippets = this.snippets.filter(s => s.id !== snippet.id)))
   }
-
 
 }
