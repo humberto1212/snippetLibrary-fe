@@ -54,5 +54,14 @@
       "topic": "Angular",
       "id": 6
     }
+  ],
+  "errorSnippet": [
+    {
+      "title": "type error",
+      "description": "error X ..",
+      "codeSnippet": "{..}",
+      "topic": 6,
+      "id": 1
+    }
   ]
 }
