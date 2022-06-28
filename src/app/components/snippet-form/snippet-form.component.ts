@@ -53,10 +53,22 @@ export class SnippetFormComponent implements OnInit {
 
   addSnippet(){
     if(this.snippetForm.valid){
+
+ /*      function nl2br(str: string){
+        return str.replace(/(?:\r\n|\r|\n)/g, '<br>');
+       }
+      
+     let newtextInp =  nl2br(this.snippetForm.value.codeSnippet)
+
+     console.log(newtextInp);
+
+     this.snippetForm.value.codeSnippet = newtextInp; */
+
+
       this.snippetService.addSnippetSe(this.snippetForm.value).subscribe(this.snippetForm.value);
     }
 
-    console.log(this.snippetForm.value);
+    console.log(this.snippetForm.value.codeSnippet);
 
 
     this.dialogRef.close();
