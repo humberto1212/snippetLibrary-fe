@@ -16,7 +16,7 @@
         <mat-form-field appearance="outline">
             <mat-label>Solution</mat-label>
             <textarea formControlName="codeSnippet" matInput></textarea>
-        </mat-form-field>
+        </mat-form-field> 
 
         <mat-form-field appearance="fill">
             <mat-label for="topic">Select</mat-label>
@@ -24,6 +24,8 @@
               <mat-option *ngFor="let topic of topics" [value]="topic.id">{{topic.topic}}</mat-option>
             </mat-select>
         </mat-form-field>
+
+
 
 
     </form>
