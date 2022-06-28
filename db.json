@@ -1,34 +1,5 @@
 {
-  "snippet": [
-    {
-      "title": "Dropdown",
-      "description": "testing  Dropdown",
-      "codeSnippet": "{}",
-      "topic": "1",
-      "id": 4
-    },
-    {
-      "title": "Dropdown2",
-      "description": "testing  Dropdown2",
-      "codeSnippet": "{}...",
-      "topic": "2",
-      "id": 5
-    },
-    {
-      "title": "CSS Glass style",
-      "description": "This is a glass style with css",
-      "codeSnippet": ".glass-style{\n  back..\ncolor..\n}",
-      "topic": 5,
-      "id": 6
-    },
-    {
-      "title": "SQL",
-      "description": "new des",
-      "codeSnippet": "{\ndnwdwdnwkdn\ndwkndwkndknwd\nwjhdjwhd\n\ndkjwhdwhddkjh\njwdwjdhwjhd\n\ndkwhdkwhd\nkdwkdhwkd\n}",
-      "topic": 4,
-      "id": 7
-    }
-  ],
+  "snippet": [],
   "topic": [
     {
       "topic": "Go",
@@ -57,11 +28,25 @@
   ],
   "errorSnippet": [
     {
-      "title": "type error",
-      "description": "error X ..",
-      "codeSnippet": "{..}",
-      "topic": 6,
+      "title": "TypeError in Typescript",
+      "description": "Uncaught TypeError: Object prototype may only be an Object or null: undefined",
+      "codeSnippet": "function isLoggedIn(param: number | true) {\n  if (param === 0) {\n    return false\n  } else {\n    return true\n  }\n}",
+      "topic": 3,
       "id": 1
+    },
+    {
+      "title": "Error converting interface{} to int go-gin",
+      "description": "interface conversion: interface is float64, not int",
+      "codeSnippet": "f := c.MustGet(\"account\").(float64)\ni := int(f)\n// i is of type int, you may use it so",
+      "topic": 1,
+      "id": 2
+    },
+    {
+      "title": "NullPointerException",
+      "description": "What are Null Pointer Exceptions (java.lang.NullPointerException) and what causes them?",
+      "codeSnippet": "public void doSomething(SomeObject obj) {\n    if(obj == null) {\n       // Do something\n    } else {\n       // Do something else\n    }",
+      "topic": 2,
+      "id": 3
     }
   ]
 }
