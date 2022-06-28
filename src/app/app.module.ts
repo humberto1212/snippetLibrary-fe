@@ -11,7 +11,7 @@ import {TopicComponent} from './components/topic/topic.component';
 import {SnippetFormComponent} from './components/snippet-form/snippet-form.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {SideNavComponent} from './components/side-nav/side-nav.component';
-import {ContentboardComponent } from './components/contentboard/contentboard.component';
+
 import {MatIconModule} from '@angular/material/icon';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -22,7 +22,9 @@ import {MatSelectModule} from '@angular/material/select';
 import { OptionsComponent } from './components/options/options.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { ErrorSnippetComponent } from './components/error-snippet/error-snippet.component';
-import { ErrorContentboardComponent } from './components/error-contentboard/error-contentboard.component';
+
+import {NgxCopyPasteModule} from 'ngx-copypaste'
+
 
 
 
@@ -33,11 +35,12 @@ import { ErrorContentboardComponent } from './components/error-contentboard/erro
     TopicComponent,
     SnippetFormComponent,
     SideNavComponent,
-    ContentboardComponent,
+    
     OptionsComponent,
     ErrorSnippetComponent,
-    ErrorContentboardComponent,
-    routingComponents
+    
+    routingComponents,
+    
   ],
   imports: [
     BrowserModule,
@@ -53,7 +56,8 @@ import { ErrorContentboardComponent } from './components/error-contentboard/erro
     MatButtonModule,
     ReactiveFormsModule,
     MatSelectModule,
-    Ng2SearchPipeModule
+    Ng2SearchPipeModule,
+    NgxCopyPasteModule
   ],
   providers: [],
   bootstrap: [AppComponent]
