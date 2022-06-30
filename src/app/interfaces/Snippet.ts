@@ -2,6 +2,6 @@ export interface Snippet {
     id?: number;
     title?: string;
     description?: string;
-    codeSnippet?: string;
+    codeSnippet?: any;
     topic?: string;
 }
