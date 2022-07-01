@@ -19,25 +19,26 @@
             <div   *ngFor="let snippet of snippets | filter: searchText "
              class="snippet-box">
 
-               <div class="delete-button-div">
-                    <mat-icon class="delete-button" (click)="deleteSnippet(snippet)">close</mat-icon>
-               </div> 
-                
-               
-                <div class="snippet-p" *ngFor="let topic of topics"> 
-                    <p class="topic-style" *ngIf="topic.id == snippet.topic">{{topic.topic}}</p>
-                 </div>  
-         
+             <div class="delete-button-div">
+                <mat-icon class="delete-button" (click)="deleteSnippet(snippet)">close</mat-icon>
+           </div> 
+            
+           
+            <div class="snippet-tag" *ngFor="let topic of topics"> 
+                <p class="topic-style" *ngIf="topic.id == snippet.topic">{{topic.topic}}</p>
+             </div>  
+     
 
-                <p class="snippet-p">{{snippet.title}}</p>
-                
-               <p class="snippet-p"><span class="row-styles">Description:</span>{{snippet.description}}</p> 
-                
+            <p class="title">{{snippet.title}}</p>
+            
+           <p class="snippet-p"><span class="row-styles">Description:</span>{{snippet.description}}</p> 
+            
 
-          
-                <div class="board-content-code-style">
-                    <p >{{snippet.codeSnippet}}</p>
-                </div> 
+      
+            <div class="board-content-code-style">
+                <div ngxCopyPaste #cp="copy" class="html-text" [innerHTML]="snippet.codeSnippet"></div>
+                <mat-icon style="cursor:pointer" (click)="cp.copy()">file_copy</mat-icon>
+            </div> 
             
                
             </div> 

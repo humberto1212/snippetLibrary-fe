@@ -24,12 +24,12 @@
                </div> 
                 
                
-                <div class="snippet-p" *ngFor="let topic of topics"> 
+                <div class="snippet-tag" *ngFor="let topic of topics"> 
                     <p class="topic-style" *ngIf="topic.id == snippet.topic">{{topic.topic}}</p>
                  </div>  
          
 
-                <p class="snippet-p">{{snippet.title}}</p>
+                <p class="title">{{snippet.title}}</p>
                 
                <p class="snippet-p"><span class="row-styles">Description:</span>{{snippet.description}}</p> 
                 
@@ -37,7 +37,7 @@
           
                 <div class="board-content-code-style">
                     <div ngxCopyPaste #cp="copy" class="html-text" [innerHTML]="snippet.codeSnippet"></div>
-                    <button (click)="cp.copy()">Copy</button>
+                    <mat-icon style="cursor:pointer" (click)="cp.copy()">file_copy</mat-icon>
                 </div> 
             
                

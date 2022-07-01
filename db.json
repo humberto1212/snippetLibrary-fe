@@ -1,5 +1,48 @@
 {
-  "snippet": [],
+  "snippet": [
+    {
+      "title": "Button toggle selection mode",
+      "description": "By default, the appearance of mat-button-toggle-group and mat-button-toggle will follow the latest Material Design guidelines.",
+      "codeSnippet": "<h3>Single selection</h3>\n<mat-button-toggle-group name=\"favoriteColor\" aria-label=\"Favorite Color\">\n  <mat-button-toggle value=\"red\">Red</mat-button-toggle>\n  <mat-button-toggle value=\"green\">Green</mat-button-toggle>\n  <mat-button-toggle value=\"blue\">Blue</mat-button-toggle>\n</mat-button-toggle-group>\n\n<h3>TS</h3>\nimport {Component} from '@angular/core';\n\n/**\n * @title Button toggle selection mode\n */\n@Component({\n  selector: 'button-toggle-mode-example',\n  templateUrl: 'button-toggle-mode-example.html',\n})\nexport class ButtonToggleModeExample {}",
+      "topic": 6,
+      "id": 1
+    },
+    {
+      "title": "Start the PostgreSQL command-line",
+      "description": "n the Windows Command Prompt, run the command:",
+      "codeSnippet": "psql -U userName",
+      "topic": 7,
+      "id": 2
+    },
+    {
+      "title": "PostgreSQL create table syntax",
+      "description": "o create a new table, you use the CREATE TABLE statement. The following illustrates the basic syntax of the CREATE TABLE statement:",
+      "codeSnippet": "CREATE TABLE [IF NOT EXISTS] table_name (\n   column1 datatype(length) column_contraint,\n   column2 datatype(length) column_contraint,\n   column3 datatype(length) column_contraint,\n   table_constraints\n);",
+      "topic": 7,
+      "id": 3
+    },
+    {
+      "title": "JavaScript For Loop",
+      "description": "Loops can execute a block of code a number of times.",
+      "codeSnippet": "for (statement 1; statement 2; statement 3) {\n  // code block to be executed\n}",
+      "topic": 3,
+      "id": 4
+    },
+    {
+      "title": "SQL AND Operator",
+      "description": "The AND and OR operators are used to filter records based on more than one condition:",
+      "codeSnippet": "SELECT column1, column2, ...\nFROM table_name\nWHERE condition1 AND condition2 AND condition3 ...;",
+      "topic": 4,
+      "id": 5
+    },
+    {
+      "title": "Java Syntax",
+      "description": "Every line of code that runs in Java must be inside a class.",
+      "codeSnippet": "public class Main {\n  public static void main(String[] args) {\n    System.out.println(\"Hello World\");\n  }\n}",
+      "topic": 2,
+      "id": 6
+    }
+  ],
   "topic": [
     {
       "topic": "Go",
@@ -24,6 +67,14 @@
     {
       "topic": "Angular",
       "id": 6
+    },
+    {
+      "topic": "Postgresql",
+      "id": 7
+    },
+    {
+      "topic": "React",
+      "id": 8
     }
   ],
   "errorSnippet": [
@@ -47,6 +98,13 @@
       "codeSnippet": "public void doSomething(SomeObject obj) {\n    if(obj == null) {\n       // Do something\n    } else {\n       // Do something else\n    }",
       "topic": 2,
       "id": 3
+    },
+    {
+      "title": "TypeError in Typescript",
+      "description": "ggg",
+      "codeSnippet": "gg",
+      "topic": 3,
+      "id": 4
     }
   ]
 }

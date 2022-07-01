@@ -10,7 +10,7 @@
 .board-style{
 /*     border: solid;
     border-color: blue; */
-    height: 79%;
+    height: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,6 +34,8 @@
 }
 
 .board-content-code-style{
+    display: flex;
+    justify-content: space-between;
     border-radius: 5px;
     height: 90%;
     width: 100%;
@@ -64,10 +66,22 @@
     color: white;
 }
 
+.snippet-tag{
+    margin-left: 5%;
+    color: white;
+}
+
 .snippet-p{
    margin-left: 5%;
-   color: white;
+   color: rgba(157, 155, 155, 0.776);
+}
 
+.title{
+    margin-left: 5%;
+   color: white;
+   font-weight: 800; 
+   width: 100%;
+   text-align: center;
 }
 
 .topic-style{
@@ -88,7 +102,7 @@
 }
 
 .delete-button{
-    color: #fd5d93;
+    color: #fd5d927c;
 }
 
 input[type=text] {
@@ -106,4 +120,11 @@ input[type=text] {
   ::placeholder {
     color: rgba(255, 255, 255, 0.363);
     opacity: 1; /* Firefox */
+  }
+
+  .html-text{
+    color: #fd5d93;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top:  20px;
   }

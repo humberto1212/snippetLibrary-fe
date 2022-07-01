@@ -17,8 +17,8 @@ const httpOptions = {
 })
 export class ErrorSnippetService {
 
-    //private apiUrl = 'http://localhost:8080/api/errorSnippet'
-    private apiUrl = 'http://localhost:8080/errorSnippet'
+    private apiUrl = 'http://localhost:8080/api/errorSnippet'
+    //private apiUrl = 'http://localhost:8080/errorSnippet'
 
   constructor(private http:HttpClient) { }
 

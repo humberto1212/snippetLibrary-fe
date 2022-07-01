@@ -1,6 +1,4 @@
-//import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit} from '@angular/core';
-//import { Snippet } from '../../interfaces/Snippet';
 import { MatDialogRef} from '@angular/material/dialog';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { SnippetService } from 'src/app/services/snippet/snippet.service';
@@ -20,6 +18,8 @@ export class SnippetFormComponent implements OnInit {
 
   snippetForm !: FormGroup;
   topics: Topic[] = [];
+
+
 
 
   constructor( 
@@ -42,29 +42,10 @@ export class SnippetFormComponent implements OnInit {
       this.topics = topics 
     })  
 
-  
-
   }
-
-/*   title?: string;
-  description?: string;
-  codeSnippet?: string;
-  topic?: string; */
 
   addSnippet(){
     if(this.snippetForm.valid){
-
- /*      function nl2br(str: string){
-        return str.replace(/(?:\r\n|\r|\n)/g, '<br>');
-       }
-      
-     let newtextInp =  nl2br(this.snippetForm.value.codeSnippet)
-
-     console.log(newtextInp);
-
-     this.snippetForm.value.codeSnippet = newtextInp; */
-
-
       this.snippetService.addSnippetSe(this.snippetForm.value).subscribe(this.snippetForm.value);
     }
 
