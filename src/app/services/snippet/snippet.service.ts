@@ -16,12 +16,14 @@ const httpOptions = {
 })
 export class SnippetService {
 
-  //private apiUrl = 'http://localhost:8080/api/snippet'
-  private apiUrl = 'http://localhost:8080/snippet'
+
+  private apiUrl = 'http://localhost:8080/api/snippet'
+  //private apiUrl = 'http://localhost:8080/snippet'
 
   constructor(private http:HttpClient) { }
 
   addSnippetSe(snippet: Snippet): Observable<Snippet>{
+ 
     return this.http.post<Snippet>(this.apiUrl, snippet, httpOptions);
   }
 
